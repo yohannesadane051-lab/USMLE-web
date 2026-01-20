@@ -11,7 +11,7 @@ st.set_page_config(
 # ---------------- LOAD QUESTIONS ----------------
 @st.cache_data
 def load_questions():
-    json_path = "data/questions.json"
+    json_path = "questions.json"
     if not os.path.exists(json_path):
         st.error("❌ questions.json not found")
         return []
